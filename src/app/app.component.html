@@ -1,0 +1,16 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+
+<form #AData="ngForm" (ngSubmit)="onClik(AData.value)">
+<div style="text-align:left">
+X: <input type="number" name="x" ngModel required>
+Y: <input type="number" name="y" ngModel required>
+<input type="submit" value="press">
+<!-- <button type="submit" class="btn border" [disabled]="UData.invalid">Login</button> -->
+</div>
+</form>
+
+<div style="padding:50px">
+    <canvas id="myChart" width="600" height="300">{{ chart }}</canvas>
+    <!-- <input type="submit" value="build" (click)="onBuild()"> -->
+</div>
